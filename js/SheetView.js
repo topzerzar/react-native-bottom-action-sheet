@@ -59,12 +59,12 @@ class SheetView extends PureComponent {
       if (element.subTitle === undefined) element.subTitle = "";
       if (element.divider === undefined) element.divider = false;
 
-      if (element.icon && element.icon.props) {
-        element.icon = element.icon.props;
+      // if (element.icon && element.icon.props) {
+      //   element.icon = element.icon.props;
 
-        let glyph = RNVectorHelper.Resolve(element.icon.family, element.icon.name);
-        element.icon = Object.assign({}, element.icon, { glyph: glyph });
-      }
+      //   let glyph = RNVectorHelper.Resolve(element.icon.family, element.icon.name);
+      //   element.icon = Object.assign({}, element.icon, { glyph: glyph });
+      // }
 
       return element;
     });
